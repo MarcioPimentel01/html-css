@@ -43,3 +43,18 @@ This repository serves as both an educational resource and a starting point for 
 
 The repository is structured as follows:
 
+
+- **index.html**: Contains the markup for the interactive card, organized within a container.
+- **styles.css**: Contains the core CSS that applies the 3D transform, transition effects, and keyframe animations.
+
+## Setup and Installation
+
+To run the project locally, follow these steps:
+
+1. **Clone the Repository:**
+
+   ```bash
+   git clone https://github.com/yourusername/pure-css-animation-project.git
+   cd pure-css-animation-project
+
+
