@@ -32,50 +32,61 @@ body {
 header h1{
     display: flex;
     justify-content: center;
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 800;
     margin: 30px 0;
 }
 
 main {
     display: flex;
-    justify-content: space-between;
-    margin: 0 10%;
-
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 0 5%;
 }
 
 .container-card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-width: 250px;
-    min-height: 460px;
-    border-radius: 10px;
-    background-color: var(--bg-main-color);
+    width: 100%;
+    max-width: 500px; 
+    min-height: 650px;
+    border-radius: 20px;
+    background-color: var(--bg-second-main-color);
     color: var(--bg-text-color);
+    margin: 20px; 
+    overflow: hidden;
 }
 
 .container-character-name {
-    width: 90%;
+    width: 93.5%;
+    height: inherit;
     text-align: center;
-    background-color: var(--bg-second-main-color);
-    border-radius: 5px;
-    margin: 15px 0; /* Added spacing */
+    background-color: var(--bg-main-color);
+    border-radius: 20px;
+    margin: 15px 0;
 }
+
+.container-character-name h2.character {
+    font-size: 2.7rem;
+    color: var(--bg-text-color);
+    margin: 20px 0;
+}
+
 
 .flip-container {
     position: relative;
-    width: 230px;
-    height: 330px;
-    border-radius: 5px;
+    width: 100%; /*! Make the width fluid */
+    height: 700px; /*! Adjust height for flexibility */
+    max-width: 93.5%;
     perspective: 50rem;
-    margin-top: 33px;
+    margin-top: 20px;
 }
 
 .flip-container .front-side img {
-    border-radius: 5px;
+    border-radius: 20px;
     width: 100%;
-    height: 100%;
+    height: 95%;
 }
 
 
@@ -88,6 +99,7 @@ main {
     height: 100%;
     transition: transform 0.5s;
     transform-style: preserve-3d;
+    visibility: hidden; /* !remove after do css on the back side */
 }
 
 .back-side {
@@ -97,10 +109,11 @@ main {
     left: 0;
     width: 100%;
     height: 100%;
-    visibility: hidden;
-    transform: rotate(180deg);
+    visibility: visible;
+    /* transform: rotateY(180deg); */ /*!change it back after CSS on the back side */
     transition: transform 0.5s;
     transform-style: preserve-3d;
+    color: var(--bg-color)
 }
 
 .flip-container:hover .front-side {
@@ -111,4 +124,45 @@ main {
 .flip-container:hover .back-side {
     transform: rotateY(0deg);
     visibility: visible;
+}
+
+/*! responsive layout responsive */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column; /* ! To stack cards Vertically */
+        justify-content: center;
+    }
+
+    .container-card {
+        max-width: 100%; /* !To Make the cards take full width on smaller screens */
+    }
+
+    .flip-container {
+        width: 100%; /* ! To Make the flip container fluid */
+        height: 300px; /* !Just reduce height on smaller screens */
+    }
+
+    .container-character-name h2.character {
+        font-size: 2rem; /* !That one is to adjust text size for mobile */
+        margin: 15px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem; /* !Reduce header size for mobile */
+    }
+
+    .container-card {
+        max-width: 100%; /* !To Ensure it takes the full width */
+        margin: 10px 0;
+    }
+
+    .flip-container {
+        height: 250px; /* !Even smaller height for mobile */
+    }
+
+    .container-character-name h2.character {
+        font-size: 1.5rem; /* !Smaller character name on mobile */
+    }
 }
