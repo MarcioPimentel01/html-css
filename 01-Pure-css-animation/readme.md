@@ -1,60 +1,76 @@
-# Pure CSS Animation Project
+# **Pure CSS Animation - Superheroes Card Flip**
 
-Welcome to the Pure CSS Animation Project! This project demonstrates how to create interactive, animated UI components using only HTML and CSS—no JavaScript required. The primary example in this repository is an interactive card that flips to reveal additional content, showcasing the power of CSS transitions, keyframe animations, and 3D transforms.
+This project is a showcase of **HTML and CSS animations** with no JavaScript involved. It demonstrates the power of CSS to create smooth and interactive animations, focusing on a **superheroes card flip effect**. The project is designed to enhance the visual experience through CSS-only animations, creating dynamic, engaging layouts.
 
-## Table of Contents
+---
 
-- [Overview](#overview)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Project Structure](#project-structure)
-- [Setup and Installation](#setup-and-installation)
-- [Usage](#usage)
-- [Customization](#customization)
-- [Future Improvements](#future-improvements)
-- [License](#license)
-- [Acknowledgments](#acknowledgments)
+## **Project Overview**
 
-## Overview
+The **Pure CSS Animation** project demonstrates the ability to create visually appealing, interactive elements using just **HTML** and **CSS**. In this project, superhero character cards are presented, with each card flipping when hovered to reveal more information about the character, such as their real name, powers, and key achievements.
 
-The purpose of this project is to illustrate how advanced animations and transitions can be implemented using only HTML and CSS. The interactive card component:
-- Uses **CSS transitions** for smooth scaling and shadow effects.
-- Implements **CSS keyframe animations** for a flipping effect.
-- Leverages **3D transforms** with `perspective` and `transform-style` to create a realistic flip.
-- Demonstrates responsive design practices ensuring a seamless experience across devices.
+---
 
-This repository serves as both an educational resource and a starting point for developers who want to add dynamic, visually engaging elements to their websites without relying on JavaScript.
+## **Features**
 
-## Features
+- **Smooth CSS Animations:** All animations are created using pure CSS, with no JavaScript required.
+- **Interactive Card Flip:** Cards flip when hovered, revealing additional details about each superhero.
+- **Responsive Design:** The design is fully responsive, adapting to different screen sizes and devices.
+- **Modern Aesthetic:** The cards have a clean and modern design, featuring images and textual content about popular DC Comics superheroes.
 
-- **Interactive Card Animation**: A card that flips on hover, revealing back-side content.
-- **Smooth Transitions**: Transitions applied to scaling and box-shadow properties for a dynamic hover effect.
-- **3D Effects**: Utilizes CSS 3D transforms to create a realistic flip animation.
-- **Responsive Design**: Adapts the layout for various screen sizes using media queries.
-- **Clean and Modular CSS**: Well-commented and organized CSS for easy customization and scalability.
+---
 
-## Technologies Used
+## **Technologies Used**
 
-- **HTML5**: Semantic markup to structure the content.
-- **CSS3**: Advanced styling including transitions, animations, and transforms.
-- **CSS Flexbox & Grid (Optional)**: For layout management and responsive design.
+- **HTML:** Structure and layout of the page.
+- **CSS:** Styling and animations, including hover effects for the card flip, transitions, and responsive design.
+- **CSS3 Animations:** Used for creating smooth transitions and animations when hovering over the cards.
 
-## Project Structure
+---
 
-The repository is structured as follows:
+## **How to Run the Project Locally**
 
+If you’d like to run this project on your local machine, follow these simple steps:
 
-- **index.html**: Contains the markup for the interactive card, organized within a container.
-- **styles.css**: Contains the core CSS that applies the 3D transform, transition effects, and keyframe animations.
-
-## Setup and Installation
-
-To run the project locally, follow these steps:
-
-1. **Clone the Repository:**
+1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/pure-css-animation-project.git
-   cd pure-css-animation-project
+   git clone https://github.com/MarcioPimentel01/html-css.git
+
+   ***Navigate to the project directory:***
+   cd html-css/01-Pure-css-animation
+   ```
+
+Open ***index.html*** in your browser:
+
+Double-click on ***index.html*** to open the project in your web browser.
+
+```graphql
+html-css/
+│
+├── 01-Pure-css-animation/
+│   ├── index.html              # The main HTML file for the project
+│   ├── assets/
+│   │   ├── img/                # Folder containing images for superhero cards
+│   │   └── style.css           # The main CSS file
+│   ├── README.md               # The readme file you're reading now
+└── .gitignore                  # Git ignore file
+```
+
+## Live Demo
+You can view the live version of the project by visiting the following link:
+🔗 [Live Demo](https://marciopimentel01.github.io/html-css/01-Pure-css-animation/)
+
+## GitHub Repository
+The full repository for this project is available on GitHub. Feel free to explore the code and contribute:
+🔗 [GitHub Repository](https://github.com/MarcioPimentel01/html-css/tree/main/01-Pure-css-animation)
+
+## Contributing
+Contributions are welcome! If you would like to contribute to this project, please fork the repository and submit a pull request. Feel free to suggest improvements, fix bugs, or add new features!
+
+## Credits
+- **Superheroes Images:** Images used in this project were sourced from unsplash and other free image resources.
+- **Design Inspiration:** Based on a minimalistic and modern layout style.
 
 
+# Video Sample
+![](./assets/img/Video-sample.gif)
