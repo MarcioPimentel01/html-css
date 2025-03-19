@@ -107,9 +107,18 @@ header {
     grid-column: span 2;
 }
 .gallery-item:nth-child(10) {
-    grid-column: span 2;
+    grid-column: span 1;
 }
 .gallery-item:nth-child(11) {
+    grid-column: span 1;
+}
+.gallery-item:nth-child(12) {
+    grid-column: span 2;
+}
+.gallery-item:nth-child(13) {
+    grid-column: span 1;
+}
+.gallery-item:nth-child(14) {
     grid-column: span 1;
 }
 
