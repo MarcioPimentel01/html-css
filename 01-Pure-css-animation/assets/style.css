@@ -215,8 +215,15 @@ main {
         justify-content: center;
     }
 
+    header h1 {
+        font-size: 1.7rem; 
+        text-align: center;
+        margin: -2% 0 -3% 0;
+    }
+
     .container-card {
         max-width: 100%; /* !To Make the cards take full width on smaller screens */
+        margin: 25px 0;
     }
 
     .flip-container {
