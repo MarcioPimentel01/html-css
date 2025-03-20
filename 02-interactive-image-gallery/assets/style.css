@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
 * {
     margin: 0;
     padding: 0;
@@ -13,6 +16,7 @@
 
 html {
     overflow-x: hidden;
+    font-family: "Roboto Slab", serif, sans-serif;
 }
 
 body {
@@ -20,7 +24,7 @@ body {
 }
 
 main {
-    background-color: var(--bg-color);
+    background-color: var(--text-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,8 +46,8 @@ header {
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 15px;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 18px;
     width: 100%;
     max-width: 84vw;
     padding: 20px;
@@ -58,16 +62,48 @@ header {
     background-color: white;
     border-radius: 8px;
     overflow: hidden;
+    filter: drop-shadow(5px 3px 5px rgba(206, 200, 200, 0.705));
     background: linear-gradient(145deg, var(--bg-color), var(--icon-color));
     /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease; */
+}
+
+.description-card  {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    z-index: 99;
+    color: aliceblue;
+    position: fixed;
+        top: 240px;
+        left: 40px;
+}
+
+.description-card h1 {
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--card-main-color);
+}
+
+.description-card h2 {
+    font-family: "Roboto Slab", sans-serif, serif;
+    margin-bottom: 4px;
+    color: var(--text-color);
+}
+
+.description-card span {
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.description-card p {
+    color: var(--card-main-color);
+    font-style: italic;
 }
 
 .gallery-item img {
 
     width: 100%;
     height: 65%;
-    max-width: 450px;
+    max-width: 520px;
     max-height: 350px;
     object-fit: cover;
     visibility: visible;
@@ -83,10 +119,10 @@ header {
     transform: scale(1.03);
     /* transition-property: background; */
     transition-timing-function: ease;
-    transition-duration: 400ms;
+    transition-duration: 250ms;
 
 
-    filter: opacity(25%);
+    filter: opacity(30%);
 
 }
 
@@ -94,19 +130,19 @@ header {
     grid-column: span 2;
 }
 .gallery-item:nth-child(2) {
-    grid-column: span 1;
+    grid-column: span 2;
 }
 .gallery-item:nth-child(3) {
     grid-column: span 2;
 }
 .gallery-item:nth-child(4) {
-    grid-column: span 1;
+    grid-column: span 2;
 }
 .gallery-item:nth-child(5) {
-    grid-column: span 1;
+    grid-column: span 2;
 }
 .gallery-item:nth-child(6) {
-    grid-column: span 1;
+    grid-column: span 2;
 }
 .gallery-item:nth-child(7) {
     grid-column: span 2;
@@ -118,34 +154,278 @@ header {
     grid-column: span 2;
 }
 .gallery-item:nth-child(10) {
-    grid-column: span 1;
+    grid-column: span 2;
 }
 .gallery-item:nth-child(11) {
-    grid-column: span 1;
+    grid-column: span 2;
 }
 .gallery-item:nth-child(12) {
     grid-column: span 2;
 }
 .gallery-item:nth-child(13) {
-    grid-column: span 1;
+    grid-column: span 2;
 }
 .gallery-item:nth-child(14) {
-    grid-column: span 1;
+    grid-column: span 2;
+}
+.gallery-item:nth-child(15) {
+    grid-column: span 2;
 }
 
-.gallery-item::after {
-    content: "Your caption here"; /* Customize this */
+.gallery-item:nth-child(1):after {
+    width: 100%;
+    max-width: 280px;
+    text-align: end;
+    content: "Sunlit Daydreams: A Tapestry of Simple Beach Pleasures"; 
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 27%;
+    left: 70%;
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
-    padding: 10px;
+    padding: 8px;
     font-size: 1.2rem;
     border-radius: 8px;
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transition: opacity 300ms ease;
+}
+.gallery-item:nth-child(2):after {
+    width: 100%;
+    max-width: 280px;
+    text-align: end;
+    content: "Unpacked Wanderlust: A Tapestry of Vacation Essentials"; 
+    position: absolute;
+    top: 27%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 8px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 300ms ease;
+}
+.gallery-item:nth-child(3):after {
+    width: 100%;
+    max-width: 280px;
+    text-align: end;
+    content: "Endless Horizons: Reflections of Two Souls at the Ocean's Edge"; 
+    position: absolute;
+    top: 27%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 8px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 300ms ease;
+}
+.gallery-item:nth-child(4):after {
+    width: 100%;
+    max-width: 280px;
+    text-align: end;
+    content: "Skybound Companions: Embracing the Adventure"; 
+    position: absolute;
+    top: 27%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 8px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 300ms ease;
+}
+.gallery-item:nth-child(5):after {
+    width: 100%;
+    max-width: 280px;
+    text-align: end;
+    content: "Instant Nostalgia: Capturing a Timeless Moment"; 
+    position: absolute;
+    top: 27%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 8px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 300ms ease;
+}
+.gallery-item:nth-child(6):after {
+    width: 100%;
+    max-width: 280px;
+    text-align: end;
+    content: "Coastal Cheers: Sipping the Seaside Spirit"; 
+    position: absolute;
+    top: 27%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 8px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 300ms ease;
+}
+.gallery-item:nth-child(7):after {
+    width: 100%;
+    max-width: 280px;
+    text-align: end;
+    content: "Night's Grace: An Owl's Flight Through the Woods"; 
+    position: absolute;
+    top: 27%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 8px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 300ms ease;
+}
+.gallery-item:nth-child(8):after {
+    width: 100%;
+    max-width: 280px;
+    text-align: end;
+    content: "Balcony Reverie: A Tropical Touch on the Woodland Expanse"; 
+    position: absolute;
+    top: 27%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 8px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 300ms ease;
+}
+.gallery-item:nth-child(9):after {
+    width: 100%;
+    max-width: 280px;
+    text-align: end;
+    content: "Morning Glow: A New Day at the Yacht's Bow"; 
+    position: absolute;
+    top: 27%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 8px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 300ms ease;
+}
+.gallery-item:nth-child(10):after {
+    width: 100%;
+    max-width: 280px;
+    text-align: end;
+    content: "Sunset Companions: A Bond Beyond Words"; 
+    position: absolute;
+    top: 27%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 8px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 300ms ease;
+}
+.gallery-item:nth-child(11):after {
+    width: 100%;
+    max-width: 280px;
+    text-align: end;
+    content: "Focused Whiskers: A Squirrel's Intimate Moment"; 
+    position: absolute;
+    top: 27%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 8px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 300ms ease;
+}
+.gallery-item:nth-child(12):after {
+    width: 100%;
+    max-width: 280px;
+    text-align: end;
+    content: "Tropical Symphony: Two Brazilian Parrots in Colorful Harmony"; 
+    position: absolute;
+    top: 27%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 8px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 300ms ease;
+}
+.gallery-item:nth-child(13):after {
+    width: 100%;
+    max-width: 280px;
+    text-align: end;
+    content: "Twin Peaks: A Landscape of Dual Majesty"; 
+    position: absolute;
+    top: 27%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 8px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 300ms ease;
+}
+.gallery-item:nth-child(14):after {
+    width: 100%;
+    max-width: 280px;
+    text-align: end;
+    content: "Snowbound Serenity: A Fox's Winter Reverie"; 
+    position: absolute;
+    top: 27%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 8px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 300ms ease;
+}
+.gallery-item:nth-child(15):after {
+    width: 100%;
+    max-width: 280px;
+    text-align: end;
+    content: "Tropical Symphony: Two Brazilian Parrots in Colorful Harmony"; 
+    position: absolute;
+    top: 27%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 8px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 300ms ease;
 }
 
 .gallery-item:hover::after {
