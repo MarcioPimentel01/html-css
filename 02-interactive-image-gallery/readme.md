@@ -1,7 +1,8 @@
 # **Interactive Image Gallery**
 
 This project is a showcase of an **HTML and CSS interactive image gallery** with no JavaScript involved. It demonstrates the power of pure HTML and CSS to create engaging, responsive layouts with hover effects and dynamic captions. The project is designed to enhance the visual experience by combining modern design principles with CSS animations.
-
+# Video Sample
+![](./assets/img/02-interactive-image-gallery.gif)
 ---
 
 ## **Project Overview**
